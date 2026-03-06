@@ -273,10 +273,10 @@ st.markdown('<p class="slabel">Where are you going?</p>', unsafe_allow_html=True
 col_a, col_b = st.columns(2)
 with col_a:
     pickup_input = st.text_input("📍 Pickup", value=st.session_state["pickup_addr"],
-                                  placeholder="e.g. La maison de Louis")
+                                  placeholder="e.g. Une adresse à NYC, ou un lieu connu comme Central Park")
 with col_b:
     dropoff_input = st.text_input("🏁 Dropoff", value=st.session_state["dropoff_addr"],
-                                   placeholder="e.g. Le restaurant coreen de Pauline")
+                                   placeholder="e.g. Une adresse à NYC, ou un lieu connu comme Times Square")
 
 # Geocode on address change
 if pickup_input != st.session_state["pickup_addr"]:
